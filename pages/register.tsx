@@ -14,18 +14,18 @@ const Register = () => {
     phone: ''
   });
 
-    const [settings, setSettings] = useState("");
+  const [settings, setSettings] = useState('');
 
-    const saveSettings = (settings: any) => {
-        return new Promise((resolve, reject) => {
-            setTimeout(() => {
-                setSettings(settings);
-                resolve(settings);
-            }, 2000);
-        }
-    )};
+  const saveSettings = (settings: any) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        setSettings(settings);
+        resolve(settings);
+      }, 2000);
+    });
+  };
 
-const randomID = Math.random();
+  const randomID = Math.random();
 
   const { firstName, lastName, email, phone } = formData;
 
@@ -76,19 +76,19 @@ const randomID = Math.random();
         setIsSubmitted(false);
       }, 8000); // Delay of 5000 milliseconds (5 seconds)
     } catch (error) {
-        console.error('Error:', error);
-         toast.promise(saveSettings(settings), {
-          loading: 'Registering...',
-          success: <b>Registration Complete!</b>,
-          error: <b>Could not save.</b>
-        });
+      console.error('Error:', error);
+      toast.promise(saveSettings(settings), {
+        loading: 'Registering...',
+        success: <b>Registration Complete!</b>,
+        error: <b>Could not save.</b>
+      });
     } finally {
-        setIsSubmitting(false); // Set submitting state to false after request completes
-        toast.promise(saveSettings(settings), {
-          loading: 'Registering...',
-          success: <b>Registration Complete!</b>,
-          error: <b>Could not save.</b>
-        });
+      setIsSubmitting(false); // Set submitting state to false after request completes
+      toast.promise(saveSettings(settings), {
+        loading: 'Registering...',
+        success: <b>Registration Complete!</b>,
+        error: <b>Could not save.</b>
+      });
     }
   };
 
@@ -120,10 +120,12 @@ const randomID = Math.random();
       </nav>
 
       <section className="flex flex-col justify-center items-center h-screen">
-        <h2 className="text-2xl text-center font-bold mb-4">
-          Register for Conference <br /> Using{' '}
-          <span className="text-brightRed">Manage</span>
-        </h2>
+        {!isSubmitted && (
+          <h2 className="text-2xl text-center font-bold mb-4">
+            Register for Conference <br /> Using{' '}
+            <span className="text-brightRed">Manage</span>
+          </h2>
+        )}
 
         {!isSubmitted ? (
           <form
@@ -230,7 +232,7 @@ const randomID = Math.random();
                 <p className="text-2xl font-semibold">User ID:</p>
 
                 <p className="text-2xl font-bold text-slate-600">
-                  AZ {'randomID'}
+                  AZ {randomID}
                 </p>
                 <CopyToClipboard
                   text={`AZ ${randomID}`}
