@@ -210,7 +210,7 @@ const randomID = Math.random();
 
             <button
               type="submit"
-              className="p-4 w-full text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight"
+              className="p-4 w-full text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight" disabled={isSubmitting}
             >
               {isSubmitting ? 'Submitting...' : 'Register for Event'}
             </button>
