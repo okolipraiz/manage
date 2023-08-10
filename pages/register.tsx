@@ -210,7 +210,8 @@ const randomID = Math.random();
 
             <button
               type="submit"
-              className="p-4 w-full text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight" disabled={isSubmitting}
+              className="p-4 w-full text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight"
+              disabled={isSubmitting}
             >
               {isSubmitting ? 'Submitting...' : 'Register for Event'}
             </button>
@@ -228,7 +229,9 @@ const randomID = Math.random();
               <div className="bg-gray-200 p-4 rounded-lg relative">
                 <p className="text-2xl font-semibold">User ID:</p>
 
-                <p className="text-3xl font-bold text-slate-600">AZ {'test'}</p>
+                <p className="text-2xl font-bold text-slate-600">
+                  AZ {'randomID'}
+                </p>
                 <CopyToClipboard
                   text={`AZ ${randomID}`}
                   onCopy={() =>
