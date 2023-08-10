@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import {useEffect, useState} from 'react'
+import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 
 interface Attendee {
@@ -10,28 +10,32 @@ interface Attendee {
   id: number;
 }
 
-const Attendees = () => {
+interface Data {
+  sheet1: Attendee[];
+}
 
-    const [data, setData] = useState({})
-    const [isLoading, setIsLoading] = useState(false)
-   
-    useEffect(() => {
-        const fetchData = async () => {
-            setIsLoading(true);
-            try {
-                const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`);
-                const data = await res.json()
-                setData(data)
-            } catch (error) {
-                console.log(error)
-                toast.error('Something went wrong')
-            }
-        }
-        
-        fetchData()
+const Attendees = () => {
+  const [data, setData] = useState<Data>({ sheet1: [] });
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsLoading(true);
+      try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}`);
+        const data = await res.json();
+        setData(data);
+      } catch (error) {
+        console.log(error);
+        toast.error('Something went wrong');
+      } finally {
         setIsLoading(false);
-    }, [])
-        
+      }
+    };
+
+    fetchData();
+  }, []);
+
   return (
     <>
       <nav className="relative container mx-auto p-6">
