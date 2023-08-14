@@ -1,7 +1,11 @@
+import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 import { Poppins } from 'next/font/google';
 import Head from 'next/head';
 import Link from 'next/link';
 import React, {useEffect, useState} from 'react';
+import Location from '@/components/Location';
+import Newsletter from '@/components/Newsletter';
 
 export default function Home() {
 
@@ -47,34 +51,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <nav className="relative container mx-auto p-6">
-          <div className="flex items-center justify-between">
-            <div className="pt-2">
-              <img src="/img/logo.svg" alt="logo" />
-            </div>
-
-            {/* Menu items */}
-            <div className="hidden md:flex space-x-6">
-              <Link href="#" className="hover:text-darkBlue">
-                Events
-              </Link>
-              <Link href="#" className="hover:text-darkBlue">
-                Careers
-              </Link>
-              <Link href="#" className="hover:text-darkBlue">
-                Community
-              </Link>
-            </div>
-
-            {/* Button */}
-            <Link
-              href="/register"
-              className="hidden p-3 px-6 md:block pt-2 text-white bg-brightRed rounded-md baseline hover:bg-brightRedLight"
-            >
-              Register
-            </Link>
-          </div>
-        </nav>
+        <Navbar />
 
         {/* Hero */}
         <section id="hero">
@@ -206,7 +183,7 @@ export default function Home() {
         <section id="countdown">
           <div className="px-4 pt-11">
             <h1 className="text-2xl font-bold text-center md:text-4xl">
-             CountDown to  <span className='text-brightRed'>Event</span>
+              CountDown to <span className="text-brightRed">Event</span>
               <br />
               {countdownValue > 0 ? (
                 <span> {formatTime(countdownValue)}</span>
@@ -231,33 +208,11 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="bg-gray-800 text-white py-6">
-          <div className="container mx-auto flex flex-col md:flex-row justify-center items-center md:justify-between">
-            <p className="text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Manage. All rights reserved.
-            </p>
-            <div className="flex space-x-4">
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
-              >
-                Terms of Use
-              </a>
-              <a
-                href="#"
-                className="text-gray-400 hover:text-white transition duration-300"
-              >
-                Contact Us
-              </a>
-            </div>
-          </div>
-        </footer>
+        <Location />
+
+        <Newsletter />
+
+        <Footer />
       </main>
     </>
   );
