@@ -7,7 +7,7 @@ import Speakers from "@/components/Speaker";
 
 const Speaker = () => {
     return (
-      <>
+      <main>
         <Navbar />
 
         <div className="container flex flex-col items-center p-6 mx-auto mt-10 space-y-0 md:space-y-0">
@@ -28,7 +28,7 @@ const Speaker = () => {
         <Location />
         <Newsletter />
         <Footer />
-      </>
+      </main>
     );
 }
  

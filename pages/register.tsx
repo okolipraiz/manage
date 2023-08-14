@@ -221,7 +221,7 @@ const Register = () => {
             </button>
           </form>
         ) : (
-          <section className="flex flex-col justify-center items-center h-screen">
+          <section>
             <div className="bg-white p-6 rounded-lg shadow-md text-center">
               <h2 className="text-2xl font-bold mb-4">
                 Event Registration{' '}

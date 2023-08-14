@@ -16,7 +16,7 @@ const Events = () => {
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <img
                 className="w-full h-48 object-cover object-center"
-                src="https://via.placeholder.com/800x400"
+                src="/img/fliers/coming.jpeg"
                 alt="Event"
               />
               <div className="p-4">
@@ -38,7 +38,7 @@ const Events = () => {
               <div className="bg-white shadow-md rounded-lg overflow-hidden">
                 <img
                   className="w-full h-48 object-cover object-center"
-                  src="https://via.placeholder.com/800x400"
+                  src="/img/fliers/later.jpeg"
                   alt="Event 1"
                 />
                 <div className="p-4">
@@ -51,7 +51,7 @@ const Events = () => {
               <div className="bg-white shadow-md rounded-lg overflow-hidden">
                 <img
                   className="w-full h-48 object-cover object-center"
-                  src="https://via.placeholder.com/800x400"
+                  src="/img/fliers/later.jpeg"
                   alt="Event 2"
                 />
                 <div className="p-4">

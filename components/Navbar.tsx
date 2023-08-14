@@ -1,6 +1,26 @@
 import Link from "next/link";
+import { useEffect } from "react";
 
 const Navbar = () => {
+ 
+
+  useEffect(() => {
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('menu');
+
+    const handleMenuClick = () => {
+      btn?.classList.toggle('open');
+      nav?.classList.toggle('flex');
+      nav?.classList.toggle('hidden');
+    };
+
+    btn?.addEventListener('click', handleMenuClick);
+
+    return () => {
+      btn?.removeEventListener('click', handleMenuClick);
+    };
+  }, []);
+
     return (
       <>
         <nav className="relative container mx-auto p-6">
@@ -45,8 +65,8 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu items */}
-          <div id="menu" className="absolute flex flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-            <Link href="#" className="hover:text-darkBlue">
+          <div id="menu" className="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+            <Link href="/events" className="hover:text-darkBlue">
               Events
             </Link>
             <Link href="/speaker" className="hover:text-darkBlue">
