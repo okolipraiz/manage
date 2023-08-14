@@ -10,6 +10,17 @@ body{
   /* font-family: 'Darker Grotesque', sans-serif;
    */
   font-family: 'Poppins', sans-serif;
+  background-image: url('/img/bg-tablet-pattern.svg');
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-position: 90% -25%;
+}
+
+#cta{
+  background-image: url('/img/bg-simplify-section-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 a {

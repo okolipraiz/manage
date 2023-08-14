@@ -1,7 +1,7 @@
 const Footer = () => {
     return (
       <>
-        <footer className="bg-gray-800 text-white py-6">
+        <footer className="bg-gray-900 text-white py-6">
           <div className="container mx-auto flex flex-col md:flex-row justify-center items-center md:justify-between">
             <p className="text-sm mb-4 md:mb-0">
               &copy; {new Date().getFullYear()} Manage. All rights reserved.

@@ -55,8 +55,8 @@ const team = [
     image: '/img/team/ui.jpeg'
   },
   {
-    name: 'Anagha',
-    role: 'Frontend Engineer',
+    name: 'Okoro Gabrielle',
+    role: 'Event Organizer',
     image: 'https://via.placeholder.com/300'
   }
 ];
@@ -75,7 +75,7 @@ const Cards = () => {
         key={index}
       >
         <img
-          className="w-full h-full object-cover object-center transition-transform duration-300 transform group-hover:scale-105"
+          className="w-full h-72 object-cover object-center transition-transform duration-300 transform group-hover:scale-105"
           src={member.image}
           alt={member.name}
         />

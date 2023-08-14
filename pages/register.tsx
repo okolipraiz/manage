@@ -96,9 +96,11 @@ const Register = () => {
     <>
       <nav className="relative container mx-auto p-6">
         <div className=" md:flex items-center justify-between">
-          <div className="pt-2">
-            <img src="/img/logo.svg" alt="logo" />
-          </div>
+          <Link href="/">
+            <div className="pt-2">
+              <img src="/img/logo.svg" alt="logo" />
+            </div>
+          </Link>
 
           <div className="my-4 md:my-0 flex flex-row  items-center space-x-2">
             <div>

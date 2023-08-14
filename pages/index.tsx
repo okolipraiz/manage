@@ -7,6 +7,7 @@ import React, {useEffect, useState} from 'react';
 import Location from '@/components/Location';
 import Newsletter from '@/components/Newsletter';
 
+
 export default function Home() {
 
 //  const initialCountdownValue =
