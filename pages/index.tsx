@@ -65,8 +65,10 @@ export default function Home() {
                 <span className="text-brightRed">discuss</span> the future.
               </h1>
               <p className="max-w-sm text-center text-darkGrayishBlue md:text-left">
-                Manage makes it simple for software teams to plan day-to-day
-                tasks while keeping the larger team goals in view.
+                `Conference for a Shared Vision: Building, Discussing, and
+                Shaping the Future Together`. We at Manage makes it simple for software
+                teams to plan day-to-day tasks while keeping the larger team
+                goals in view.
               </p>
               <div className="flex justify-center md:justify-start">
                 <Link
