@@ -90,12 +90,18 @@ export default function Home() {
           <div className="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
             <div className="flex flex-col space-y-12 md:w-1/2">
               <h2 className="max-w-md text-4xl font-bold text-center md:text-left">
-                Whats different about Manage?
+                Whats makes Manage Different?
               </h2>
               <p className="max-w-sm text-center text-darkGrayishBlue md:text-left">
-                Manage provides all the functionality your team needs, without
-                the complexity. Our software is tailor-made for modern digital
-                product teams.
+                At Manage, we are dedicated to orchestrating conferences that
+                transcend expectations and catalyze growth. With a passion for
+                creating immersive and transformative experiences, our mission
+                is to unite visionaries, thought leaders, and innovators under
+                one roof, fostering connections that drive progress. Through
+                meticulous planning, creative engagement, and a commitment to
+                excellence, we ensure every conference becomes a stepping stone
+                towards success, equipping attendees with the knowledge and
+                inspiration to excel in their endeavors.
               </p>
             </div>
 
@@ -108,20 +114,19 @@ export default function Home() {
                       01
                     </div>
                     <h3 className="text-base font-bold md:mb-4 md:hidden">
-                      Track company-wide progress
+                      Unparalleled Networking
                     </h3>
                   </div>
                 </div>
 
                 <div>
                   <h3 className="hidden mb-4 text-lg font-bold md:block">
-                    Track company-wide progress
+                    Unparalleled Networking
                   </h3>
                   <p className="text-darkGrayishBlue">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                    ab iste nesciunt illum atque excepturi? Ex, pariatur iure
-                    sequi assumenda doloribus laboriosam fugiat voluptates
-                    veritatis dolor quia. Eius, repellat saepe.
+                    Immerse yourself in a dynamic ecosystem of professionals,
+                    influencers, and experts. Forge invaluable connections that
+                    extend far beyond the conference.
                   </p>
                 </div>
               </div>
@@ -134,20 +139,19 @@ export default function Home() {
                       02
                     </div>
                     <h3 className="text-base font-bold md:mb-4 md:hidden">
-                      company-wide progress across
+                      Cutting-Edge Insights
                     </h3>
                   </div>
                 </div>
 
                 <div>
                   <h3 className="hidden mb-4 text-lg font-bold md:block">
-                    Track company-wide progress
+                    Cutting-Edge Insights
                   </h3>
                   <p className="text-darkGrayishBlue">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                    ab iste nesciunt illum atque excepturi? Ex, pariatur iure
-                    sequi assumenda doloribus laboriosam fugiat voluptates
-                    veritatis dolor quia. Eius, repellat saepe.
+                    Dive into the latest trends, innovations, and breakthroughs
+                    in your industry. Gain insights that will empower you to
+                    stay ahead of the curve.
                   </p>
                 </div>
               </div>
@@ -160,20 +164,19 @@ export default function Home() {
                       03
                     </div>
                     <h3 className="text-base font-bold md:mb-4 md:hidden">
-                      Only God can do it
+                      Interactive Workshops
                     </h3>
                   </div>
                 </div>
 
                 <div>
                   <h3 className="hidden mb-4 text-lg font-bold md:block">
-                    Only God can do it
+                    Interactive Workshops
                   </h3>
                   <p className="text-darkGrayishBlue">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
-                    ab iste nesciunt illum atque excepturi? Ex, pariatur iure
-                    sequi assumenda doloribus laboriosam fugiat voluptates
-                    veritatis dolor quia. Eius, repellat saepe.
+                    Elevate your skills and knowledge through hands-on workshops
+                    led by industry luminaries. Get ready to roll up your
+                    sleeves and engage in practical, actionable learning.
                   </p>
                 </div>
               </div>

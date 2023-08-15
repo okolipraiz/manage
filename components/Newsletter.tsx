@@ -23,7 +23,7 @@ const Newsletter = () => {
         <section id="cta" className="bg-brightRed">
           <div className="container flex flex-col items-center justify-between px-6 md:px-0 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
             <h2 className="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
-              Simplify how your team works today.
+              Empowering Conferences, Transforming Futures.
             </h2>
 
             <button className="p-3 px-6 text-brightRed bg-white rounded-md baseline hover:bg-brightRedLight hover:text-white">
