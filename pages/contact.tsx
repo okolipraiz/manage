@@ -9,28 +9,28 @@ const Contact = () => {
 
       const form = useRef(null);
 
-      const handleSubmit = (event: any) => {
-        event.preventDefault();
-        emailjs
-          .sendForm(
-            `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`,
-            `${process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID}`,
-            form.current,
-            `${process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY}`
-          )
-          .then(
-            (result: any) => {
-              toast.success(
-                'Message sent successfully, we will get back to you soon.'
-              );
-              console.log(result.text);
-              form.current.reset();
-            },
-            (error: any) => {
-              console.log(error.text);
-            }
-          );
-      };
+      // const handleSubmit = (event: React.FormEvent) => {
+      //   event.preventDefault();
+      //   emailjs
+      //     .sendForm(
+      //       `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID}`,
+      //       `${process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID}`,
+      //       form.current as HTMLFormElement,
+      //       `${process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY}`
+      //     )
+      //     .then(
+      //       (result: any) => {
+      //         toast.success(
+      //           'Message sent successfully, we will get back to you soon.'
+      //         );
+      //         console.log(result.text);
+      //         form.current.reset();
+      //       },
+      //       (error: any) => {
+      //         console.log(error.text);
+      //       }
+      //     );
+      // };
 
     return (
       <>

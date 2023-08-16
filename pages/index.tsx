@@ -12,7 +12,7 @@ export default function Home() {
 
 //  const initialCountdownValue =
 //    parseInt(localStorage.getItem('countdownValue')) || 10;
- const [countdownValue, setCountdownValue] = useState(21 * 24 * 60 * 60);
+ const [countdownValue, setCountdownValue] = useState(1 * 24 * 60 * 60);
 
 
     useEffect(() => {

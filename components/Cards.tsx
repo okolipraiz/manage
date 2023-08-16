@@ -5,12 +5,12 @@ const team = [
     image: '/img/team/ceo.jpeg'
   },
   {
-    name: 'Uduma Jeremiah Obasi',
+    name: 'ODOEMELAM FEBECHI',
     role: 'CTO',
     image: '/img/team/cto.jpeg'
   },
   {
-    name: 'ODOEMELAM FEBECHI',
+    name: 'Uduma Jeremiah Obasi',
     role: 'COO',
     image: '/img/team/coo.jpeg'
   },
