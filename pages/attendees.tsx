@@ -68,7 +68,7 @@ const Attendees = () => {
       <section className="flex flex-col justify-center items-center py-11 ">
         <h2 className="text-2xl text-center font-bold mb-4">
           List of
-          <span className="text-brightRed">Attendees</span>
+          <span className="text-brightRed">{" "}Attendees</span>
         </h2>
 
         {isLoading && <p>Loading...</p>}

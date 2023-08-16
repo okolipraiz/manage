@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Footer = () => {
     return (
       <>
@@ -19,12 +21,12 @@ const Footer = () => {
               >
                 Terms of Use
               </a>
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="text-gray-400 hover:text-white transition duration-300"
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </footer>

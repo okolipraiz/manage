@@ -63,6 +63,52 @@ const Events = () => {
               </div>
               {/* You can add more events in a similar fashion */}
             </div>
+
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Past Events</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {/* Event 1 */}
+              <div className="bg-white shadow-md rounded-lg overflow-hidden">
+                <img
+                  className="w-full h-48 object-cover object-center"
+                  src="/img/fliers/later.jpeg"
+                  alt="Event 1"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">Event 1</h3>
+                  <p className="text-gray-600">Talk with Joe!</p>
+                </div>
+              </div>
+
+              {/* Event 2 */}
+              <div className="bg-white shadow-md rounded-lg overflow-hidden">
+                <img
+                  className="w-full h-48 object-cover object-center"
+                  src="/img/fliers/later.jpeg"
+                  alt="Event 2"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">Event 2</h3>
+                  <p className="text-gray-600">
+                    Opportunity comes but once!
+                  </p>
+                </div>
+              </div>
+              {/* Event 2 */}
+              <div className="bg-white shadow-md rounded-lg overflow-hidden">
+                <img
+                  className="w-full h-48 object-cover object-center"
+                  src="/img/fliers/later.jpeg"
+                  alt="Event 2"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold mb-2">Event 2</h3>
+                  <p className="text-gray-600">
+                  World and Technology
+                  </p>
+                </div>
+              </div>
+              {/* You can add more events in a similar fashion */}
+            </div>
           </div>
         </section>
 
